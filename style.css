@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(circle, #27393b, #305254, #386c6e, #3f8788, #47a3a2);
+  background-color: #1f1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+/*===============================  Container  ==============================*/
+
+.container{
+  width: 450px;
+  height: auto;
+  /* background-image: radial-gradient(circle, #27393b, #305254, #386c6e, #3f8788, #47a3a2); */
+  background-color: #d6f9ff;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  
+}
+/*===================  Backroud colour according to weather =================*/
+
+/* Radial gradients for different weather types */
+
+.thunderstorm {
+  background: radial-gradient(circle, #679498, #385157, #1b2627);
+}
+
+.drizzle {
+  background-image: radial-gradient(circle, #42878b, #378587, #2c8383, #1e817f, #0a7f7a);
+}
+
+.rain {
+  background-image: radial-gradient(circle, #34696b, #2b6566, #216160, #155d5b, #055955);
+}
+
+.snow {
+  background-image: radial-gradient(circle, #ffffff, #f6f5f5, #eeebea, #e4e1df, #d8d8d4);
+}
+
+.atmosphere {
+  background: radial-gradient(circle, #cccccc, #999999, #666666);
+}
+
+.clear {
+  background-image: radial-gradient(circle, #ffff85, #ffe747, #fbd365, #ff932e, #ffab1a);
+}
+
+.clouds {
+  background: radial-gradient(circle, #c9c9c9, #8f8f8f, #4e6679);
+}
+
+
+/*===============================  Search Box  ==============================*/
+.searchBox{
+  text-align: left;
+  margin: 10px;
+}
+form{ 
+  width: 230px;
+  height: 30px;
+  text-align: left;
+  display: flex;
+  gap: 0;
+  border-radius:7px ;
+  background-color: #1c1c1c;
+}
+#searchIcon{
+  width: 30px;
+  height: 30px;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 7px;
+}
+
+input{
+  width: 200px;
+  height: 30px;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+input::placeholder{
+  color: white;
+}
+/*=============================  Main Info  =================================*/
+.mainInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  gap: 10px;
+}
+.location{
+  display: flex;
+  gap: 10px;
+}
+#weatherType{
+  background-color: #292929;
+  color: white;
+  font-weight: bolder;
+  border-radius: 14px;
+  padding: 4px 7px;
+}
+#weatherIcon{
+  font-size: 50px;
+  text-shadow: 7px 0 7px #a1a1a1;
+}
+#temp{
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+}
+.maxmin{
+  display: flex;
+  gap: 100px;
+}
+/*=============================   Other Info ===================================*/
+.otherInfo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 10px;
+}
+.info{
+  text-align: center;
+  display: flex;
+  box-shadow: rgb(140, 140, 140) 0px 0px 10px;
+  border-radius: 14px;
+}
+.info:hover{
+  background-color: #d6d6d6;
+}
+.icons{
+  font-size: 30px;
+  padding: 5px;
+  color: black;
+  margin: 5px;
+}

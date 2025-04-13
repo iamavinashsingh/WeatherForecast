@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather Forecast</title>
+<!-- =====================  Font  Awesome Link for Icon ========================-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+</head>
+
+<body>
+  <section class="container">
+<!-- ============================    Search Box   ==============================-->
+    <div class="searchBox">
+      <form class="weatherSearch" >
+        <p id="searchIcon"><i class="fas fa-search"></i></p>
+        <input type="text" class="inputSearch" placeholder="Search Your City...">
+      </form>
+    </div>
+<!-- ============================    Main Info    ==============================-->
+      <div class="mainInfo">
+<!------------------------------     Location         ------------------------>
+        <div class="location">
+          <h2 id="locationIcon"><i class="fa-solid fa-location-dot"></i></h2>
+          <h2 id="city"></h2>
+        </div>
+<!------------------------------     Date Time      ------------------------>
+        <p id="dateTime"></p>
+<!------------------------------     Weather Type      ------------------------>
+        <p id="weatherType"></p>
+        <p><img id="weatherIcon" alt="Weather Icon"></p>
+  <!------------------------------     Temperature   ------------------------>
+        <p id="temp"></p>
+        <div class="maxmin">
+          <p id="minTemp"></p>
+          <p id="maxTemp"></p>
+        </div>
+      </div>
+<!-- ============================   Other Info   ==============================-->
+    <div class="otherInfo">
+<!----------------------------    Feels like     ------------------------------>
+      <div class="info">
+        <p class="icons"><i class="fa-solid fa-temperature-three-quarters" style="color: orange;"></i></p>
+        <div><p>Feels Like</p>
+        <p id="tempValue"></p></div>
+      </div>
+<!----------------------------     Humidity       ------------------------------>
+      <div class="info">
+        <p class="icons"><i class="fa-solid fa-droplet" style="color: coral;"></i></p>
+      <div><p>Humidity</p>
+      <p id="humidityValue"></p></div>
+      </div>
+
+<!----------------------------    Wind Speed        ---------------------------->  
+      <div class="info">
+        <p class="icons"><i class="fa-solid fa-wind" style="color: gray;"></i></p>
+        <div><p>Wind</p>
+        <p id="windValue"></p></div>
+      </div>
+
+<!----------------------------    Pressure         ------------------------------>      
+      <div class="info">
+        <p class="icons"><i class="fa-solid fa-gauge-high" style="color: lightblue;"></i></p>
+        <div><p>Pressure</p>
+        <p id="pressureValue"></p></div>
+      </div>
+      
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
